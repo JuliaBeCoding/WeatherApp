@@ -1,9 +1,7 @@
-export const FetchWeather = async () => {
+export const FetchWeather = async (location) => {
   try {
-    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-    const API_URL = "http://api.weatherstack.com/";
-    // TEST
-    const location = "Stockholm";
+    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+    const API_URL = "https://api.weatherstack.com/";
 
     const url = `${API_URL}?access_key=${API_KEY}&query=${location}`
 
@@ -17,5 +15,6 @@ export const FetchWeather = async () => {
     return data;
   } catch (error) {
     console.error("Fel vid API-anrop", error)
+    return null;
   }
 }
