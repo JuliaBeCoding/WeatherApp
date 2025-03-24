@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FetchWeather } from "../../services/WeatherService";
+import { getCityCord, fetchWeatherDataDaily, fetchWeatherDataFive } from "../../services/WeatherService";
 
 const WeatherApp = () => {
 
@@ -13,7 +13,7 @@ const WeatherApp = () => {
     // Neka tomt fält.
     if (!location) return;
 
-    const data = await FetchWeather(location);
+    const data = await FetchWeatherData(location);
     setWeather(data);
     setLocation("");
   };
