@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchbarContainer from "./container/Searchbar/SearchBarContainer";
 import { ConvertToDate } from "./container/ConvertToDate/ConvertToDate";
 import { GetDailyForecast } from "./container/GetDailyForecast/GetDailyForecast";
+import { AutoLocation } from "./container/AutoLocation/AutoLocation";
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
   return (
     <>
       <SearchbarContainer setWeatherData={setWeatherData} />
+
+      <AutoLocation />
 
       <h2>{weatherData?.city?.name}</h2>
 

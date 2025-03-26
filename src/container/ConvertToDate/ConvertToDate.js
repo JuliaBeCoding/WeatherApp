@@ -6,6 +6,8 @@ export function ConvertToDate(dt) {
   return date.toLocaleDateString("sv-SE", {
     weekday: "long",
     day: "numeric",
-    month: "long"
+    month: "long",
+    hour: "2-digit",
+    minute: "2-digit"
   });
 };
