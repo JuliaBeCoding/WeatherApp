@@ -12,9 +12,9 @@ function App() {
   
   return (
     <>
-      <SearchbarContainer setWeatherData={setWeatherData} />
-
       <AutoLocation />
+
+      <SearchbarContainer setWeatherData={setWeatherData} />
 
       <h2>{weatherData?.city?.name}</h2>
 
