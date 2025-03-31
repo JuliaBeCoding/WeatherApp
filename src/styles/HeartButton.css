@@ -1,0 +1,15 @@
+.HeartButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.HeartButton:hover {
+  transform: scale(1.2);
+}
+
+.HeartButton:active {
+  transform: scale(1);
+}

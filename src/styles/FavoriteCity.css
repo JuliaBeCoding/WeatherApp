@@ -1,0 +1,40 @@
+.FavoriteContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.FavoriteList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.FavoriteList li {
+  width: 100%;
+  max-width: 200px;
+}
+
+.FavoriteList button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.FavoriteList button:hover {
+  background-color: #357ABD;
+  transform: scale(1.05);
+}
+
+.FavoriteList button:active {
+  background-color: #2a5d9a;
+  transform: scale(1);
+}

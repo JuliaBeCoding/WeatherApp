@@ -1,1 +1,0 @@
-// Hämtar data på användarens lokation och displayar väderdata.
