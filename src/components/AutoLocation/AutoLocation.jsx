@@ -1,3 +1,5 @@
+// Displayar klientens lokation.
+
 import { ConvertToDate } from "../../container/ConvertToDate/ConvertToDate";
 import '../../styles/AutoLocation.css';
 

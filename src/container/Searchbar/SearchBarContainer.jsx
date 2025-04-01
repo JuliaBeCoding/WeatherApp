@@ -1,4 +1,4 @@
-// Logiken för sökfunktionen.
+// Logiken för sökfunktionen - anropar API för att hämta väderdata till sökt stad.
 
 import { useState } from "react";
 import SearchbarComponent from "../../components/Searchbar/SearchbarComponent";

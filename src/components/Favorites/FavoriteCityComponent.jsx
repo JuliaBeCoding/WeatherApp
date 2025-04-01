@@ -1,3 +1,5 @@
+// Displayar sparade favoritstäder.
+
 import '../../styles/FavoriteCity.css';
 
 export const FavoriteCityComponent = ({favorites, handleSelectCity}) => {

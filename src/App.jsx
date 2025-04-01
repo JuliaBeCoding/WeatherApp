@@ -2,7 +2,7 @@ import { useState } from "react";
 import SearchbarContainer from "./container/Searchbar/SearchBarContainer";
 import { AutoLocation } from "./container/AutoLocation/AutoLocation";
 import WeatherDisplay from "./components/WeatherDisplay/WeatherDisplay";
-import FavoriteContainer from "./container/Favorites/FavoriteCity";
+import FavoriteCity from "./container/Favorites/FavoriteCity";
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
 
       <SearchbarContainer setWeatherData={setWeatherData} />
 
-      <FavoriteContainer setWeatherData={setWeatherData} />
+      <FavoriteCity setWeatherData={setWeatherData} />
 
       {weatherData && <WeatherDisplay weatherData={weatherData} />}
     </>

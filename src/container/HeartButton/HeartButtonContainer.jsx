@@ -1,3 +1,5 @@
+// Logiken för hjärtfunktionen - sparar favoriserad stad lokalt samt tar bort om av-favoriserad.
+
 import { useState, useEffect } from "react";
 import HeartButtonComponent from "../../components/HeartButton/HeartButtonComponent";
 
@@ -9,21 +11,17 @@ const HeartButtonContainer = ({ location }) => {
     setFavorites(storedFavorites);
   }, []);
 
-  // Kontrollera om aktuell stad är en favorit
   const isFavorite = favorites.includes(location);
 
   const toggleFavorites = () => {
     let updatedFavorites;
 
-    if (isFavorite) {
-      // Ta bort staden från favoriter
+    if (isFavorite === true) {
       updatedFavorites = favorites.filter((city) => city !== location);
     } else {
-      // Lägg till staden i favoriter
       updatedFavorites = [...favorites, location];
     }
 
-    // Uppdatera localStorage och UI
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
     setFavorites(updatedFavorites);
   };

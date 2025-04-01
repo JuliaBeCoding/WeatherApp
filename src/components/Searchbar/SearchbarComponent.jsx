@@ -1,5 +1,4 @@
-// Sökfunktion för användaren att skriva in lokation.
-// UI enbart.
+// Displayar sökfunktion.
 
 import '../../styles/Searchbar.css';
 
